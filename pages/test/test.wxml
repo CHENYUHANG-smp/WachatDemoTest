@@ -1,0 +1,39 @@
+<!--pages/test/test.wxml-->
+<view>Hello</view><view>world</view>
+<text selectable>hello</text>
+<text decode>&nbsp;</text>
+<text selectable>wORLD</text>
+
+<rich-text nodes="{{msg}}"></rich-text>
+<button type="warn" bindtap="clickMe">点击我</button>
+
+<button type="warn" bindtap="toast">弹窗</button>
+
+<button type="warn" bindtap="load">加载</button>
+<button type="warn" bindtap="cancelLoad">取消加载</button>
+<button type="warn" bindtap="modal">模式窗体</button>
+
+<button open-type="contact">联系客服</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfos">
+获取访问者信息
+</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getUserPhones">
+获取手机号码
+</button>
+
+<checkbox-group>
+  <checkbox value="1">男</checkbox>
+  <checkbox value="2">女</checkbox>
+</checkbox-group>
+
+<radio-group>
+  <radio value="2">男</radio>
+  <radio value="1">女</radio>
+</radio-group>
+
+<!--a-->
+<navigator url="../index/index">网页跳转</navigator>
+<button type="warn" bindtap="goIndex">网页跳转</button>
+
+<button></button>
+
